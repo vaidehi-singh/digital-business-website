@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(225, 165, 165);
+    height: 96px;
+    padding: 0px 0px 0px 0;
+}
+
+nav {
+    background-color: transparent;
+    width: 100%;
+    height: 84px;
+    padding: 30px 0px 0px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    position: relative;
+    top: -11px;
+}
+
+.logo:hover .back {
+    animation: logo-an 0.3s linear 1 forwards;
+}
+
+.back {
+    height: 55px;
+    width: 55px;
+    background-color: black;
+    transform: rotate(45deg);
+    border-radius: 9px;
+    border: 3px solid red;
+}
+
+nav svg {
+    position: absolute;
+    top: 6px;
+    left: 5px;
+}
+
+.others {
+    margin: 9px 0px 0px 16px;
+}
+
+.others-col {
+    display: none;
+    z-index: 2;
+    background-color: rgb(225, 165, 165);
+    padding: 15px 29px;
+    height: 199px;
+    position: fixed;
+    top: 96px;
+    right: 0px;
+
+}
+
+.others-col span {
+    border-bottom: 1px solid red;
+    padding: 14px;
+}
+
+nav a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    margin: 1vmax;
+    transition: all 0.3s ease;
+    padding: 16px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    box-shadow: 0 0 15px 0;
+}
+
+
+.bar-menu svg {
+    width: 30px;
+    display: none;
+}
+
+.container {
+    background: url('https://media.istockphoto.com/id/975830640/vector/circuit-board-background-vector-illustration.jpg?s=2048x2048&w=is&k=20&c=OZANmtGEG_iLejcXMwIbE48hp76du9vCN-Mejn4J7bk=');
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 105px);
+    overflow-x: auto;
+}
+
+.out-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 60px 0px
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    align-items: center;
+}
+
+.left,
+.right {
+    width: 50%;
+}
+
+.left p {
+    font-size: 20px;
+    width: 70%;
+}
+
+.right img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.right img:hover {
+    transform: scale(1.03);
+}
+
+.btn {
+    height: 130px;
+    width: 320px;
+    display: flex;
+    align-items: center;
+}
+
+.action {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 30px;
+    padding: 20px;
+    width: 77%;
+    height: 45%;
+    margin-left: 25px;
+    transition: all 0.3s ease;
+}
+
+.action:hover {
+    box-shadow: 0 0 15px 15px black;
+    background-color: transparent;
+    color: black;
+}
+
+.out-fancy {
+    overflow: visible;
+}
+
+.fancy-sep {
+    margin-bottom: -3px;
+    background-color: rgb(225, 165, 165);
+    height: 5px;
+    width: 100%;
+    box-shadow: 0 0 19px 14px rgb(225, 165, 165);
+}
+
+.about-us {
+    background-color: white;
+    font-size: 20px;
+    padding: 60px 11vw;
+    z-index: 1;
+    margin-bottom: 45px;
+}
+
+.about-us h1 {
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.about-us p {
+    margin-top: 25px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 60px 40px 60px 40px;
+    align-items: center;
+}
+
+.services h1 {
+    background-color: white;
+    width: 65px;
+    box-shadow: 0 0 48px 39px white;
+    text-align: center;
+    padding: 0;
+    height: 65px;
+    border-radius: 35px;
+}
+
+.service-s {
+    background-color: white;
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    box-shadow: 0 0 15px 15px white;
+    transition: 0.3s ease all;
+}
+
+.service-s:hover {
+    background-color: #ffffffc0;
+    box-shadow: 0 0 15px 15px #ffffffc0;
+}
+
+.left-serve {
+    width: 50%;
+}
+
+.right-serve {
+    width: 50%;
+}
+
+.service-s img {
+    width: 79%;
+    height: auto;
+    margin-left: 53px;
+
+}
+
+.out-testimonials {
+    background-color: white;
+    padding-top: 60px;
+}
+
+.out-testimonials h1 {
+    text-align: center;
+}
+
+.testimonials {
+    padding: 100px 0 100px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 9vw;
+}
+
+.up,
+.down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1vw;
+}
+
+.testimonial-s {
+    background-color: rgb(225, 165, 165);
+    border-radius: 10px;
+    width: 35%;
+    padding: 40px;
+    transition: 0.3s ease all;
+}
+
+.testimonial-s p {
+    margin-top: 80px;
+    text-align: right;
+}
+
+.testimonial-s:hover {
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 30px 4px rgb(225, 165, 165);
+}
+
+.out-contact {
+    background-color: white;
+    padding: 60px;
+}
+
+.out-contact h1 {
+    text-align: center;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5vw 5vw;
+    gap: 5vw;
+}
+
+.contact-us .left-contact,
+.contact-us .right-contact {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    border-radius: 10px;
+    padding: 30px 25px 30px 25px;
+    box-shadow: 0 0 15px 0 rgb(225, 165, 165);
+}
+
+.contact-us .left-contact li {
+    list-style: none;
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+.contact-us .left-contact:hover,
+.contact-us .right-contact:hover {
+    box-shadow: 0 0 15px 5px rgb(225, 165, 165);
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact-us form input,
+.contact-us form textarea {
+    width: 90%;
+    height: 50px;
+    padding: 7px 20px;
+}
+
+.down-contact {
+    display: flex;
+    gap: 35px;
+}
+
+.contact-us svg {
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 30px;
+    transition: 0.3s ease all;
+}
+
+.contact-us svg:hover {
+    transform: scale(1.3);
+}
+
+
+
+/* Animations */
+@keyframes logo-an {
+    from {
+        transform: rotate(45deg);
+    }
+
+    to {
+        transform: rotate(-45deg);
+    }
+}
+
+/* Media queries (Responsiveness) */
+@media (max-width:600px) {
+
+    /* Navigation Bar */
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .logo {
+        left: -40vw;
+    }
+
+    .bar-menu svg {
+        position: absolute;
+        top: 41px;
+        left: 89vw;
+        width: 30px;
+        display: block;
+    }
+
+    .others {
+        display: none;
+    }
+
+    /* Hero section  */
+    .about {
+        flex-direction: column;
+    }
+
+    .about .left,
+    .about .right {
+        width: 95%;
+    }
+
+    .about p {
+        width: 100%;
+    }
+
+    .action {
+        width: 68%;
+        margin-left: 0;
+    }
+
+    /* Services */
+    .service-s {
+        flex-direction: column;
+        padding: 0;
+        width: 90%;
+    }
+
+    .left-serve,
+    .right-serve {
+        width: 90%;
+    }
+
+    .service-s img {
+        margin-left: 11%;
+    }
+
+    .up,
+    .down {
+        flex-direction: column;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        gap: 1vw;
+    }
+
+    .testimonial-s {
+        width: 67%;
+    }
+
+    /* Contact Section */
+    .contact-us {
+        flex-direction: column;
+        gap: 12vw;
+    }
+
+    .contact-us .left-contact,
+    .contact-us .right-contact {
+        width: 95%;
+    }
+}
