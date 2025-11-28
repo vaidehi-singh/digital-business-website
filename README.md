@@ -1,5 +1,5 @@
 ## Project Title
-Social Media Share button
+Digital Business Website
 
 ## Description
 A responsive digital business website using HTML, CSS, and JavaScript, designed by me. It features smooth transitions, modern layouts, and adapts seamlessly across mobile, tablet, and desktop devices, presenting services and brand identity with a professional, user‑friendly experience.
